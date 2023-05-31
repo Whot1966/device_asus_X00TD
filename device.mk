@@ -474,4 +474,8 @@ PRODUCT_PACKAGES += \
     ZenParts
 
 # Inherit the proprietary files
+ifeq ($(TARGET_KERNEL_VERSION),4.19)
+$(call inherit-product, vendor/asus/X00TD_4_19/X00TD_4_19-vendor.mk)
+else
 $(call inherit-product, vendor/asus/X00TD/X00TD-vendor.mk)
+endif
