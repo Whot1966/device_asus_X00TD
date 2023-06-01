@@ -6,3 +6,6 @@
 
 # Inherit from upper BoardConfig.mk
 include device/asus/X00TD/BoardConfig.mk
+
+TARGET_ENFORCES_QSSI := true
+TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
